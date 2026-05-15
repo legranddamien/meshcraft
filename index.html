@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer">
+        <meta
+            name="description"
+            content="MeshCraft is an iPhone and iPad app for creating mesh gradients, wallpapers, backgrounds, and abstract visuals."
+        >
+        <title>MeshCraft - Mesh gradients made easy</title>
+        <link rel="icon" type="image/png" href="assets/app-icon.png">
+        <link rel="apple-touch-icon" href="assets/app-icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+            rel="stylesheet"
+        >
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+            rel="stylesheet"
+        >
+        <link rel="stylesheet" href="styles.css">
+        <script src="site.js" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+        <header class="site-header" aria-label="Primary navigation" data-i18n-aria-label="aria.primaryNav">
+            <a class="brand" href="#top" aria-label="MeshCraft home" data-i18n-aria-label="aria.home">
+                <img class="brand-mark" src="assets/app-icon.png" alt="" width="40" height="40" aria-hidden="true">
+                MeshCraft
+            </a>
+            <nav class="nav-links" aria-label="Site sections" data-i18n-aria-label="aria.sections">
+                <a href="#features" data-i18n="nav.features">Features</a>
+                <a href="#technology" data-i18n="nav.technology">Technology</a>
+                <a href="#support" data-i18n="nav.support">Support</a>
+                <a href="#privacy" data-i18n="nav.privacy">Privacy</a>
+            </nav>
+            <label class="language-switcher">
+                <span class="visually-hidden" data-i18n="language.label">Language</span>
+                <select id="language-select" aria-label="Language" data-i18n-aria-label="language.label">
+                    <option value="en">English</option>
+                    <option value="de">Deutsch</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="ja">日本語</option>
+                    <option value="pt">Português</option>
+                </select>
+            </label>
+        </header>
+
+        <main id="main">
+            <section id="top" class="hero section-shell" aria-labelledby="hero-title">
+                <div class="hero-copy">
+                    <p class="eyebrow" data-i18n="hero.eyebrow">iOS 26+ &middot; iPhone &middot; iPad</p>
+                    <h1 id="hero-title">MeshCraft</h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">
+                        Create polished mesh gradients, wallpapers, backgrounds, and abstract visuals on iPhone and iPad.
+                    </p>
+                    <div class="hero-actions" aria-label="Primary links" data-i18n-aria-label="aria.primaryLinks">
+                        <a
+                            class="button button-primary button-app-store"
+                            href="https://apps.apple.com/app/id6740181655"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="ri-apple-fill" aria-hidden="true"></i>
+                            <span data-i18n="hero.appStore">Download on the App Store</span>
+                        </a>
+                        <a class="button button-secondary" href="#support" data-i18n="nav.support">Support</a>
+                        <a class="button button-secondary" href="#privacy" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <div class="showcase" aria-label="MeshCraft app screenshots" data-i18n-aria-label="aria.screenshots">
+                    <article class="phone-card phone-card-back" aria-label="iPhone 17 Max frame showing MeshCraft dashboard screenshot" data-i18n-aria-label="aria.dashboardFrame">
+                        <div class="phone-frame">
+                            <span class="phone-button phone-button-left" aria-hidden="true"></span>
+                            <span class="phone-button phone-button-right" aria-hidden="true"></span>
+                            <div class="phone-screen">
+                                <img
+                                    src="assets/screenshots/iphone_dashboard.jpg"
+                                    width="720"
+                                    height="1564"
+                                    alt="MeshCraft dashboard with saved gradients."
+                                    data-i18n-alt="alt.dashboard"
+                                    loading="eager"
+                                >
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="phone-card phone-card-front" aria-label="iPhone 17 Max frame showing MeshCraft editor screenshot" data-i18n-aria-label="aria.editorFrame">
+                        <div class="phone-frame">
+                            <span class="phone-button phone-button-left" aria-hidden="true"></span>
+                            <span class="phone-button phone-button-right" aria-hidden="true"></span>
+                            <div class="phone-screen">
+                                <img
+                                    src="assets/screenshots/iphone_editor.jpg"
+                                    width="720"
+                                    height="1564"
+                                    alt="MeshCraft editor with draggable gradient points."
+                                    data-i18n-alt="alt.editor"
+                                    loading="eager"
+                                >
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="features" class="section-shell content-section" aria-labelledby="features-title">
+                <div class="section-heading">
+                    <p class="eyebrow" data-i18n="features.eyebrow">Built for color work</p>
+                    <h2 id="features-title" data-i18n="features.title">A focused studio for expressive gradients.</h2>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <i class="ri-drag-move-2-line" aria-hidden="true"></i>
+                        <h3 data-i18n="features.direct.title">Direct mesh editing</h3>
+                        <p data-i18n="features.direct.body">Shape the image by moving control points instead of fighting sliders.</p>
+                    </article>
+                    <article class="feature-card">
+                        <i class="ri-aspect-ratio-line" aria-hidden="true"></i>
+                        <h3 data-i18n="features.exports.title">Device-sized exports</h3>
+                        <p data-i18n="features.exports.body">Create wallpapers sized for the physical iPhone or iPad display.</p>
+                    </article>
+                    <article class="feature-card">
+                        <i class="ri-palette-line" aria-hidden="true"></i>
+                        <h3 data-i18n="features.harmonies.title">Color harmonies</h3>
+                        <p data-i18n="features.harmonies.body">Explore balanced palettes, replace colors, and tune the whole composition.</p>
+                    </article>
+                    <article class="feature-card">
+                        <i class="ri-sparkling-2-line" aria-hidden="true"></i>
+                        <h3 data-i18n="features.appleIntelligence.title">Apple Intelligence</h3>
+                        <p data-i18n="features.appleIntelligence.body">Use palette suggestions to start faster when a blank canvas feels too quiet.</p>
+                    </article>
+                    <article class="feature-card">
+                        <i class="ri-contrast-drop-2-line" aria-hidden="true"></i>
+                        <h3 data-i18n="features.overlays.title">Overlays and filters</h3>
+                        <p data-i18n="features.overlays.body">Add texture, grain, scanlines, glitches, vignette, and geometric overlays.</p>
+                    </article>
+                    <article class="feature-card">
+                        <i class="ri-user-3-line" aria-hidden="true"></i>
+                        <h3 data-i18n="features.portrait.title">Portrait depth</h3>
+                        <p data-i18n="features.portrait.body">Blend depth-effect photos with gradients for layered wallpaper artwork.</p>
+                    </article>
+                    <article class="feature-card">
+                        <i class="ri-arrow-go-back-line" aria-hidden="true"></i>
+                        <h3 data-i18n="features.undo.title">Undo friendly</h3>
+                        <p data-i18n="features.undo.body">Experiment freely with undo and redo while the design takes shape.</p>
+                    </article>
+                    <article class="feature-card">
+                        <i class="ri-folder-image-line" aria-hidden="true"></i>
+                        <h3 data-i18n="features.library.title">Saved library</h3>
+                        <p data-i18n="features.library.body">Keep creations close, filter by size, reopen them, and export when ready.</p>
+                    </article>
+                    <article class="feature-card">
+                        <i class="ri-flow-chart" aria-hidden="true"></i>
+                        <h3 data-i18n="features.shortcuts.title">Shortcuts automation</h3>
+                        <p data-i18n="features.shortcuts.body">Fetch saved gradients from Shortcuts and build wallpaper routines around them.</p>
+                    </article>
+                </div>
+
+                <div class="mesh-carousel" aria-label="MeshCraft gradient examples" data-i18n-aria-label="aria.examples">
+                    <div class="mesh-carousel-heading">
+                        <p class="eyebrow" data-i18n="examples.eyebrow">Examples</p>
+                        <h3 data-i18n="examples.title">Made for the screen you carry.</h3>
+                    </div>
+                    <div class="mesh-carousel-track">
+                        <figure class="mesh-slide">
+                            <img src="assets/meshes/mesh_1.jpg" width="640" height="1391" alt="MeshCraft example gradient 1" data-i18n-alt="alt.mesh1" loading="lazy">
+                        </figure>
+                        <figure class="mesh-slide">
+                            <img src="assets/meshes/mesh_2.jpg" width="640" height="1391" alt="MeshCraft example gradient 2" data-i18n-alt="alt.mesh2" loading="lazy">
+                        </figure>
+                        <figure class="mesh-slide">
+                            <img src="assets/meshes/mesh_3.jpg" width="640" height="1391" alt="MeshCraft example gradient 3" data-i18n-alt="alt.mesh3" loading="lazy">
+                        </figure>
+                        <figure class="mesh-slide">
+                            <img src="assets/meshes/mesh_4.jpg" width="640" height="1391" alt="MeshCraft example gradient 4" data-i18n-alt="alt.mesh4" loading="lazy">
+                        </figure>
+                        <figure class="mesh-slide">
+                            <img src="assets/meshes/mesh_5.jpg" width="640" height="1391" alt="MeshCraft example gradient 5" data-i18n-alt="alt.mesh5" loading="lazy">
+                        </figure>
+                        <figure class="mesh-slide">
+                            <img src="assets/meshes/mesh_6.jpg" width="640" height="1391" alt="MeshCraft example gradient 6" data-i18n-alt="alt.mesh6" loading="lazy">
+                        </figure>
+                        <figure class="mesh-slide">
+                            <img src="assets/meshes/mesh_7.jpg" width="640" height="1391" alt="MeshCraft example gradient 7" data-i18n-alt="alt.mesh7" loading="lazy">
+                        </figure>
+                        <figure class="mesh-slide">
+                            <img src="assets/meshes/mesh_8.jpg" width="640" height="1391" alt="MeshCraft example gradient 8" data-i18n-alt="alt.mesh8" loading="lazy">
+                        </figure>
+                        <figure class="mesh-slide">
+                            <img src="assets/meshes/mesh_9.jpg" width="640" height="1391" alt="MeshCraft example gradient 9" data-i18n-alt="alt.mesh9" loading="lazy">
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section id="technology" class="section-shell content-section split-section" aria-labelledby="technology-title">
+                <div class="section-heading sticky-heading">
+                    <p class="eyebrow" data-i18n="technology.eyebrow">Apple platform native</p>
+                    <h2 id="technology-title" data-i18n="technology.title">Modern iOS technology, no web service required.</h2>
+                    <p data-i18n="technology.body">
+                        MeshCraft is built as a native Apple app with local-first creative data and iCloud sync for the
+                        user's own account.
+                    </p>
+                </div>
+                <div class="technology-list" aria-label="Apple technologies used by MeshCraft" data-i18n-aria-label="aria.technologies">
+                    <article>
+                        <span><i class="ri-gemini-line" aria-hidden="true"></i> Liquid Glass</span>
+                        <p data-i18n="technology.liquidGlass">Modern iOS 26 interface styling for controls and editing surfaces.</p>
+                    </article>
+                    <article>
+                        <span><i class="ri-database-2-line" aria-hidden="true"></i> SwiftData</span>
+                        <p data-i18n="technology.swiftData">Local model persistence for saved meshes and editor state.</p>
+                    </article>
+                    <article>
+                        <span><i class="ri-cloud-line" aria-hidden="true"></i> CloudKit and iCloud</span>
+                        <p data-i18n="technology.cloudKit">Private account sync across the user's Apple devices.</p>
+                    </article>
+                    <article>
+                        <span><i class="ri-cpu-line" aria-hidden="true"></i> Metal</span>
+                        <p data-i18n="technology.metal">GPU-backed overlays, filters, and export rendering.</p>
+                    </article>
+                    <article>
+                        <span><i class="ri-gradienter-line" aria-hidden="true"></i> MeshGradient</span>
+                        <p data-i18n="technology.meshGradient">Native gradient rendering tuned for fluid color fields.</p>
+                    </article>
+                    <article>
+                        <span><i class="ri-sparkling-line" aria-hidden="true"></i> Apple Intelligence</span>
+                        <p data-i18n="technology.appleIntelligence">Palette generation to help users find fresh color directions.</p>
+                    </article>
+                    <article>
+                        <span><i class="ri-command-line" aria-hidden="true"></i> App Intents</span>
+                        <p data-i18n="technology.appIntents">Shortcuts actions for retrieving saved and random meshes.</p>
+                    </article>
+                    <article>
+                        <span><i class="ri-layout-5-line" aria-hidden="true"></i> SwiftUI and TipKit</span>
+                        <p data-i18n="technology.swiftUI">Adaptive iPhone and iPad screens with contextual discovery tips.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="support" class="section-shell content-section support-section" aria-labelledby="support-title">
+                <div class="section-heading">
+                    <p class="eyebrow" data-i18n="support.eyebrow">Support</p>
+                    <h2 id="support-title" data-i18n="support.title">Help for MeshCraft.</h2>
+                </div>
+
+                <div class="support-grid">
+                    <article class="support-panel critical-panel">
+                        <h3 data-i18n="support.requirements.title">Requirements</h3>
+                        <p data-i18n="support.requirements.body">
+                            MeshCraft requires iOS 26 or later. It is available for iPhone and iPad, and some interface
+                            details may adapt to the device size.
+                        </p>
+                    </article>
+                    <article class="support-panel critical-panel">
+                        <h3 data-i18n="support.icloud.title">iCloud sync</h3>
+                        <p data-i18n="support.icloud.body">
+                            MeshCraft supports iCloud. To sync saved creations across devices, sign in to an iCloud
+                            account on each device and keep iCloud enabled in Settings.
+                        </p>
+                    </article>
+                    <article class="support-panel">
+                        <h3 data-i18n="support.creating.title">Creating a gradient</h3>
+                        <p data-i18n="support.creating.body">
+                            Start with a device, square, or custom size. Drag mesh points to shape the gradient, adjust
+                            colors, apply overlays or filters, then save or export the result.
+                        </p>
+                    </article>
+                    <article class="support-panel">
+                        <h3 data-i18n="support.photos.title">Exporting to Photos</h3>
+                        <p data-i18n="support.photos.body">
+                            If exporting fails, check Photos permissions in iOS Settings and confirm there is enough
+                            storage available on the device.
+                        </p>
+                    </article>
+                    <article class="support-panel">
+                        <h3 data-i18n="support.shortcuts.title">Shortcuts</h3>
+                        <p data-i18n="support.shortcuts.body">
+                            MeshCraft exposes App Intents to Shortcuts so automations can retrieve a selected, latest,
+                            or random saved mesh image.
+                        </p>
+                    </article>
+                    <article class="support-panel">
+                        <h3 data-i18n="support.missing.title">Missing creations</h3>
+                        <p data-i18n="support.missing.body">
+                            If saved meshes do not appear after installing on a new device, confirm the same iCloud
+                            account is signed in and give iCloud time to finish syncing.
+                        </p>
+                    </article>
+                    <article class="support-panel">
+                        <h3 data-i18n="support.palettes.title">Apple Intelligence palettes</h3>
+                        <p data-i18n="support.palettes.body">
+                            Palette suggestions depend on Apple Intelligence availability for the device, region, and
+                            language. The editor still works without them.
+                        </p>
+                    </article>
+                    <article class="support-panel">
+                        <h3 data-i18n="support.crashes.title">Crashes or glitches</h3>
+                        <p data-i18n="support.crashes.body">
+                            Keep MeshCraft and iOS updated. Crash diagnostics may be sent through Sentry to help fix
+                            stability problems without identifying the user.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="privacy" class="section-shell content-section legal-section" aria-labelledby="privacy-title">
+                <div class="section-heading">
+                    <p class="eyebrow" data-i18n="privacy.eyebrow">Privacy Policy</p>
+                    <h2 id="privacy-title" data-i18n="privacy.title">MeshCraft keeps creative data with the user.</h2>
+                    <p data-i18n="privacy.updated">Last updated May 15, 2026.</p>
+                </div>
+
+                <div class="legal-copy">
+                    <article>
+                        <h3 data-i18n="privacy.overview.title">Overview</h3>
+                        <p data-i18n="privacy.overview.body">
+                            MeshCraft is a native iPhone and iPad app for creating mesh gradients and wallpapers. The
+                            developer, Damien Legrand, does not operate an app backend for storing user-created
+                            MeshCraft content.
+                        </p>
+                    </article>
+                    <article>
+                        <h3 data-i18n="privacy.content.title">User-created content</h3>
+                        <p data-i18n="privacy.content.body">
+                            Gradients, saved meshes, editor settings, and exported images are kept on the user's device.
+                            When iCloud is available and enabled, MeshCraft can sync app data through the user's private
+                            iCloud account. The developer does not keep a separate copy of that data on a developer-run
+                            server.
+                        </p>
+                    </article>
+                    <article>
+                        <h3 data-i18n="privacy.icloud.title">iCloud</h3>
+                        <p data-i18n="privacy.icloud.body">
+                            iCloud sync is provided by Apple. Users can manage iCloud account settings, iCloud storage,
+                            and device sync behavior in iOS Settings. Deleting MeshCraft data from the app or device may
+                            remove the corresponding synced app data according to Apple's iCloud behavior.
+                        </p>
+                    </article>
+                    <article>
+                        <h3 data-i18n="privacy.crash.title">Crash diagnostics</h3>
+                        <p data-i18n="privacy.crash.body">
+                            MeshCraft uses Sentry only to collect crash reports, performance data, and technical
+                            diagnostic information needed to improve app stability. These diagnostics are not used for
+                            advertising, tracking, or user profiling, and they are not intentionally linked to a user's
+                            identity.
+                        </p>
+                    </article>
+                    <article>
+                        <h3 data-i18n="privacy.tracking.title">No advertising tracking</h3>
+                        <p data-i18n="privacy.tracking.body">
+                            MeshCraft does not use third-party advertising SDKs and does not sell user data. MeshCraft
+                            does not track users across other companies' apps or websites.
+                        </p>
+                    </article>
+                    <article>
+                        <h3 data-i18n="privacy.website.title">Website note</h3>
+                        <p data-i18n="privacy.website.body">
+                            This GitHub Pages site is a static public website. It may load fonts and icons from external
+                            CDNs selected for presentation, but the MeshCraft app privacy practices described here are
+                            separate from ordinary website hosting request logs handled by GitHub or CDN providers.
+                        </p>
+                    </article>
+                    <article>
+                        <h3 data-i18n="privacy.changes.title">Changes</h3>
+                        <p data-i18n="privacy.changes.body">
+                            This policy may be updated when MeshCraft changes how it stores data or uses diagnostics.
+                            The updated policy will be published on this page.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Copyright 2026 Damien Legrand</p>
+            <nav aria-label="Footer navigation" data-i18n-aria-label="aria.footerNav">
+                <a href="#top" data-i18n="footer.top">Top</a>
+                <a href="#support" data-i18n="nav.support">Support</a>
+                <a href="#privacy" data-i18n="nav.privacy">Privacy</a>
+            </nav>
+        </footer>
+    </body>
+</html>
