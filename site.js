@@ -13,8 +13,8 @@ const translations = {
             sections: "Site sections",
             primaryLinks: "Primary links",
             screenshots: "MeshCraft app screenshots",
-            dashboardFrame: "iPhone 17 Max frame showing MeshCraft dashboard screenshot",
-            editorFrame: "iPhone 17 Max frame showing MeshCraft editor screenshot",
+            dashboardFrame: "iPhone 18 Pro Max frame showing MeshCraft dashboard screenshot",
+            editorFrame: "iPhone 18 Pro Max frame showing MeshCraft editor screenshot",
             examples: "MeshCraft gradient examples",
             technologies: "Apple technologies used by MeshCraft",
             footerNav: "Footer navigation",
@@ -85,22 +85,46 @@ const translations = {
                 body: "Fetch saved gradients from Shortcuts and build wallpaper routines around them.",
             },
         },
+        discovery: {
+            shortcutsTitle: "Make it a Shortcut",
+            shortcutsBody: "Bring your saved gradients into Apple’s Shortcuts app. Use a favorite, your latest creation, or a random gradient to build your own wallpaper routine.",
+            shortcutsNote: "Available on iOS 26 and later.",
+            eyebrow: "Find your creations",
+            title: "The right gradient. Right when you need it.",
+            searchTitle: "Search your saved gradients",
+            searchBody: "Find a gradient by name, color, mood, or texture. Spend less time browsing and more time creating.",
+            spotlightTitle: "Find it in Spotlight",
+            spotlightBody: "Look up a saved gradient from your device’s search. Recognize it by its name and preview, then tap to open it in MeshCraft.",
+            siriTitle: "Ask Siri to open it",
+            siriBody: "On iOS 27, ask Siri to open a saved gradient by name. Your creation opens in MeshCraft, ready for your next idea.",
+            siriExample: "“Siri, open Aurora Drift in MeshCraft.”",
+            siriNote: "Requires iOS 27 and availability of the new Siri experience. Shortcuts remains available on iOS 26 and later.",
+            aiTitle: "Search beyond the name",
+            aiBody: "Apple Intelligence can describe your gradients and add search tags based on their colors, mood, and texture. Those words help you find creations in your library and Spotlight, even when you don’t remember the name.",
+            aiNote: "AI descriptions and tags require an available Apple Intelligence model. Without them, you can still search by name.",
+            helpTitle: "Where is library search?",
+            helpBody: "Search appears when the library you’re viewing contains more than 10 gradients. Try a saved name first. Descriptive terms only match when descriptions or tags have been generated for that creation.",
+            siriHelpTitle: "Opening with Siri",
+            siriHelpBody: "Use the name you saved in MeshCraft when asking Siri to open a gradient. This feature requires iOS 27 and the new Siri experience. On iOS 26, use Shortcuts to retrieve a selected, latest, or random saved gradient."
+        },
         examples: {
             eyebrow: "Examples",
             title: "Made for the screen you carry.",
         },
         technology: {
             eyebrow: "Apple platform native",
-            title: "Modern iOS technology, no web service required.",
-            body: "MeshCraft is built as a native Apple app with local-first creative data and iCloud sync for the user's own account.",
+            title: "Made for your Apple devices.",
+            body: "Create on your device, keep your library in sync with your own iCloud account, and find saved gradients with Spotlight, Siri, and Shortcuts.",
             liquidGlass: "Modern iOS 26 interface styling for controls and editing surfaces.",
             swiftData: "Local model persistence for saved meshes and editor state.",
             cloudKit: "Private account sync across the user's Apple devices.",
             metal: "GPU-backed overlays, filters, and export rendering.",
             meshGradient: "Native gradient rendering tuned for fluid color fields.",
-            appleIntelligence: "Palette generation to help users find fresh color directions.",
-            appIntents: "Shortcuts actions for retrieving saved and random meshes.",
+            appleIntelligence: "Palette suggestions and descriptive search tags, when an Apple Intelligence model is available.",
+            appIntents: "Retrieve saved gradients with Shortcuts on iOS 26 and later. Open a named creation with the new Siri experience on iOS 27.",
             swiftUI: "Adaptive iPhone and iPad screens with contextual discovery tips.",
+            privateCloudCompute: "On iOS 27, MeshCraft uses Apple’s Private Cloud Compute when available to suggest palettes and generate search descriptions and tags. If it’s unavailable or a request fails, the app falls back to the on-device model when available.",
+            spotlight: "Search saved gradients by name and preview, with descriptions and tags when available.",
         },
         support: {
             eyebrow: "Support",
@@ -185,8 +209,8 @@ const translations = {
             sections: "Seitenbereiche",
             primaryLinks: "Wichtige Links",
             screenshots: "Screenshots der MeshCraft App",
-            dashboardFrame: "iPhone 17 Max Rahmen mit MeshCraft Dashboard-Screenshot",
-            editorFrame: "iPhone 17 Max Rahmen mit MeshCraft Editor-Screenshot",
+            dashboardFrame: "iPhone 18 Pro Max Rahmen mit MeshCraft Dashboard-Screenshot",
+            editorFrame: "iPhone 18 Pro Max Rahmen mit MeshCraft Editor-Screenshot",
             examples: "MeshCraft Gradient-Beispiele",
             technologies: "Von MeshCraft verwendete Apple Technologien",
             footerNav: "Footer-Navigation",
@@ -257,22 +281,46 @@ const translations = {
                 body: "Rufe gespeicherte Gradients über Kurzbefehle ab und baue Wallpaper-Routinen damit.",
             },
         },
+        discovery: {
+            shortcutsTitle: "Mit Kurzbefehle automatisieren",
+            shortcutsBody: "Nutze deine gespeicherten Verläufe in Apples App Kurzbefehle. Wähle eine Kreation, die neueste oder eine zufällige aus und erstelle deine eigene Hintergrundbild-Automation.",
+            shortcutsNote: "Verfügbar ab iOS 26.",
+            eyebrow: "Deine Kreationen wiederfinden",
+            title: "Der passende Verlauf. Genau im richtigen Moment.",
+            searchTitle: "Gespeicherte Verläufe durchsuchen",
+            searchBody: "Finde einen Verlauf nach Name, Farbe, Stimmung oder Textur. Weniger suchen, mehr gestalten.",
+            spotlightTitle: "In Spotlight wiederfinden",
+            spotlightBody: "Suche über die Gerätesuche nach einem gespeicherten Verlauf. Erkenne ihn am Namen und Vorschaubild und tippe darauf, um ihn in MeshCraft zu öffnen.",
+            siriTitle: "Mit Siri öffnen",
+            siriBody: "Bitte Siri unter iOS 27, einen gespeicherten Verlauf mit seinem Namen zu öffnen. Deine Kreation öffnet sich in MeshCraft – bereit für deine nächste Idee.",
+            siriExample: "„Siri, öffne Aurora Drift in MeshCraft.“",
+            siriNote: "Erfordert iOS 27 und die Verfügbarkeit des neuen Siri-Erlebnisses. Kurzbefehle ist weiterhin ab iOS 26 verfügbar.",
+            aiTitle: "Mehr als nur nach Namen suchen",
+            aiBody: "Apple Intelligence kann deine Verläufe beschreiben und Schlagwörter zu Farben, Stimmung und Textur ergänzen. So findest du deine Kreationen in der Sammlung und in Spotlight wieder, auch wenn dir der Name nicht einfällt.",
+            aiNote: "KI-Beschreibungen und Schlagwörter erfordern ein verfügbares Apple Intelligence-Modell. Ohne sie kannst du weiterhin nach Namen suchen.",
+            helpTitle: "Wo ist die Suche?",
+            helpBody: "Die Suche erscheint, wenn die angezeigte Sammlung mehr als 10 Verläufe enthält. Suche zuerst nach einem gespeicherten Namen. Beschreibende Begriffe liefern nur Treffer, wenn für die Kreation Beschreibungen oder Schlagwörter erstellt wurden.",
+            siriHelpTitle: "Mit Siri einen Verlauf öffnen",
+            siriHelpBody: "Nenne Siri den in MeshCraft gespeicherten Namen des Verlaufs. Dafür sind iOS 27 und das neue Siri-Erlebnis erforderlich. Unter iOS 26 kannst du mit Kurzbefehle einen bestimmten, den neuesten oder einen zufälligen gespeicherten Verlauf abrufen."
+        },
         examples: {
             eyebrow: "Beispiele",
             title: "Gemacht für den Bildschirm, den du bei dir trägst.",
         },
         technology: {
             eyebrow: "Nativ auf Apple Plattformen",
-            title: "Moderne iOS-Technologie, kein Webservice nötig.",
-            body: "MeshCraft ist als native Apple App mit lokal gespeicherten kreativen Daten und iCloud-Sync für den eigenen Account gebaut.",
+            title: "Für deine Apple-Geräte gemacht.",
+            body: "Gestalte auf deinem Gerät, synchronisiere deine Sammlung über deinen eigenen iCloud-Account und finde gespeicherte Verläufe mit Spotlight, Siri und Kurzbefehle.",
             liquidGlass: "Modernes iOS 26 Interface-Styling für Bedienelemente und Editorflächen.",
             swiftData: "Lokale Modell-Persistenz für gespeicherte Meshes und Editorzustand.",
             cloudKit: "Private Account-Synchronisierung zwischen den Apple Geräten des Nutzers.",
             metal: "GPU-gestützte Overlays, Filter und Export-Renderings.",
             meshGradient: "Native Gradient-Darstellung, abgestimmt auf fließende Farbfelder.",
-            appleIntelligence: "Palettengenerierung für frische Farbrichtungen.",
-            appIntents: "Kurzbefehle-Aktionen zum Abrufen gespeicherter und zufälliger Meshes.",
+            appleIntelligence: "Palettenvorschläge und beschreibende Suchbegriffe, wenn ein Apple Intelligence-Modell verfügbar ist.",
+            appIntents: "Rufe gespeicherte Verläufe ab iOS 26 mit Kurzbefehle ab. Öffne eine Kreation unter iOS 27 mit dem neuen Siri-Erlebnis über ihren Namen.",
             swiftUI: "Adaptive iPhone- und iPad-Oberflächen mit kontextuellen Entdeckungstipps.",
+            privateCloudCompute: "Unter iOS 27 nutzt MeshCraft Apples Private Cloud Compute, wenn verfügbar, für Palettenvorschläge sowie Beschreibungen und Suchbegriffe. Ist der Dienst nicht verfügbar oder schlägt eine Anfrage fehl, greift die App auf das Modell auf dem Gerät zurück, sofern es verfügbar ist.",
+            spotlight: "Finde gespeicherte Verläufe anhand von Namen und Vorschaubildern sowie verfügbaren Beschreibungen und Schlagwörtern.",
         },
         support: {
             eyebrow: "Support",
@@ -357,8 +405,8 @@ const translations = {
             sections: "Secciones del sitio",
             primaryLinks: "Enlaces principales",
             screenshots: "Capturas de la app MeshCraft",
-            dashboardFrame: "Marco de iPhone 17 Max con captura del panel de MeshCraft",
-            editorFrame: "Marco de iPhone 17 Max con captura del editor de MeshCraft",
+            dashboardFrame: "Marco de iPhone 18 Pro Max con captura del panel de MeshCraft",
+            editorFrame: "Marco de iPhone 18 Pro Max con captura del editor de MeshCraft",
             examples: "Ejemplos de degradados de MeshCraft",
             technologies: "Tecnologías de Apple usadas por MeshCraft",
             footerNav: "Navegación del pie",
@@ -429,22 +477,46 @@ const translations = {
                 body: "Obtén degradados guardados desde Atajos y crea rutinas de fondos de pantalla.",
             },
         },
+        discovery: {
+            shortcutsTitle: "Crea tus propios atajos",
+            shortcutsBody: "Usa tus degradados guardados en la app Atajos de Apple. Elige una creación, la más reciente o una al azar para automatizar tus fondos de pantalla.",
+            shortcutsNote: "Disponible a partir de iOS 26.",
+            eyebrow: "Encuentra tus creaciones",
+            title: "El degradado perfecto, justo cuando lo necesitas.",
+            searchTitle: "Busca tus degradados guardados",
+            searchBody: "Encuentra un degradado por su nombre, color, ambiente o textura. Dedica menos tiempo a buscar y más a crear.",
+            spotlightTitle: "Encuéntralos en Spotlight",
+            spotlightBody: "Busca un degradado guardado desde el buscador de tu dispositivo. Reconócelo por su nombre y vista previa y tócalo para abrirlo en MeshCraft.",
+            siriTitle: "Pídele a Siri que lo abra",
+            siriBody: "En iOS 27, pídele a Siri que abra un degradado guardado diciendo su nombre. Tu creación se abre en MeshCraft, lista para tu próxima idea.",
+            siriExample: "«Siri, abre Aurora Drift en MeshCraft».",
+            siriNote: "Requiere iOS 27 y que la nueva experiencia de Siri esté disponible. Atajos sigue disponible a partir de iOS 26.",
+            aiTitle: "Busca más allá del nombre",
+            aiBody: "Apple Intelligence puede describir tus degradados y añadir etiquetas según sus colores, ambiente y textura. Estas palabras te ayudan a encontrar tus creaciones en la biblioteca y en Spotlight, aunque no recuerdes su nombre.",
+            aiNote: "Las descripciones y etiquetas requieren un modelo de Apple Intelligence disponible. Sin ellas, puedes seguir buscando por nombre.",
+            helpTitle: "¿Dónde está la búsqueda?",
+            helpBody: "La búsqueda aparece cuando la biblioteca que estás viendo contiene más de 10 degradados. Prueba primero con un nombre guardado. Los términos descriptivos solo encuentran coincidencias si se han generado descripciones o etiquetas para esa creación.",
+            siriHelpTitle: "Abrir una creación con Siri",
+            siriHelpBody: "Usa el nombre guardado en MeshCraft al pedirle a Siri que abra un degradado. Esta función requiere iOS 27 y la nueva experiencia de Siri. En iOS 26, usa Atajos para obtener un degradado concreto, el más reciente o uno al azar."
+        },
         examples: {
             eyebrow: "Ejemplos",
             title: "Hecho para la pantalla que llevas contigo.",
         },
         technology: {
             eyebrow: "Nativo de Apple",
-            title: "Tecnología iOS moderna, sin servicio web.",
-            body: "MeshCraft está creada como una app nativa de Apple con datos creativos locales y sincronización con iCloud para la cuenta del usuario.",
+            title: "Diseñado para tus dispositivos Apple.",
+            body: "Crea en tu dispositivo, sincroniza tu biblioteca con tu propia cuenta de iCloud y encuentra degradados con Spotlight, Siri y Atajos.",
             liquidGlass: "Estilo de interfaz moderno de iOS 26 para controles y superficies de edición.",
             swiftData: "Persistencia local de modelos para mallas guardadas y estado del editor.",
             cloudKit: "Sincronización privada entre los dispositivos Apple del usuario.",
             metal: "Superposiciones, filtros y exportación renderizados con GPU.",
             meshGradient: "Renderizado nativo de degradados ajustado para campos de color fluidos.",
-            appleIntelligence: "Generación de paletas para encontrar nuevas direcciones de color.",
-            appIntents: "Acciones de Atajos para recuperar mallas guardadas y aleatorias.",
+            appleIntelligence: "Sugerencias de paletas y etiquetas descriptivas para buscar, cuando hay un modelo de Apple Intelligence disponible.",
+            appIntents: "Obtén degradados guardados con Atajos a partir de iOS 26. Abre una creación por su nombre con la nueva experiencia de Siri en iOS 27.",
             swiftUI: "Pantallas adaptativas para iPhone y iPad con consejos contextuales.",
+            privateCloudCompute: "En iOS 27, MeshCraft usa Private Cloud Compute de Apple cuando está disponible para sugerir paletas y generar descripciones y etiquetas de búsqueda. Si no está disponible o una solicitud falla, la app recurre al modelo del dispositivo, siempre que esté disponible.",
+            spotlight: "Encuentra degradados por su nombre y vista previa, con descripciones y etiquetas cuando estén disponibles.",
         },
         support: {
             eyebrow: "Soporte",
@@ -529,8 +601,8 @@ const translations = {
             sections: "Sections du site",
             primaryLinks: "Liens principaux",
             screenshots: "Captures d’écran de l’app MeshCraft",
-            dashboardFrame: "Cadre iPhone 17 Max affichant la capture du tableau de bord MeshCraft",
-            editorFrame: "Cadre iPhone 17 Max affichant la capture de l’éditeur MeshCraft",
+            dashboardFrame: "Cadre iPhone 18 Pro Max affichant la capture du tableau de bord MeshCraft",
+            editorFrame: "Cadre iPhone 18 Pro Max affichant la capture de l’éditeur MeshCraft",
             examples: "Exemples de dégradés MeshCraft",
             technologies: "Technologies Apple utilisées par MeshCraft",
             footerNav: "Navigation du pied de page",
@@ -601,22 +673,46 @@ const translations = {
                 body: "Récupérez des dégradés enregistrés depuis Raccourcis et créez des routines de fonds d’écran.",
             },
         },
+        discovery: {
+            shortcutsTitle: "Créez vos raccourcis",
+            shortcutsBody: "Retrouvez vos dégradés enregistrés dans l’app Raccourcis d’Apple. Choisissez une création, la plus récente ou un dégradé au hasard pour automatiser vos fonds d’écran.",
+            shortcutsNote: "Disponible dès iOS 26.",
+            eyebrow: "Retrouvez vos créations",
+            title: "Le bon dégradé, au bon moment.",
+            searchTitle: "Recherchez vos dégradés",
+            searchBody: "Retrouvez un dégradé par son nom, sa couleur, son ambiance ou sa texture. Moins de temps à chercher, plus de temps pour créer.",
+            spotlightTitle: "Retrouvez-les dans Spotlight",
+            spotlightBody: "Recherchez un dégradé enregistré depuis la recherche de votre appareil. Repérez-le grâce à son nom et à son aperçu, puis touchez-le pour l’ouvrir dans MeshCraft.",
+            siriTitle: "Demandez à Siri de l’ouvrir",
+            siriBody: "Sur iOS 27, demandez à Siri d’ouvrir un dégradé enregistré en le nommant. Votre création s’ouvre dans MeshCraft, prête pour votre prochaine idée.",
+            siriExample: "« Siri, ouvre Aurora Drift dans MeshCraft. »",
+            siriNote: "Nécessite iOS 27 et la disponibilité de la nouvelle expérience Siri. Raccourcis reste disponible dès iOS 26.",
+            aiTitle: "Retrouvez bien plus qu’un nom",
+            aiBody: "Apple Intelligence peut décrire vos dégradés et leur associer des mots-clés selon leurs couleurs, leur ambiance et leur texture. Retrouvez ainsi vos créations dans la bibliothèque et Spotlight, même si leur nom vous échappe.",
+            aiNote: "Les descriptions et les mots-clés nécessitent un modèle Apple Intelligence disponible. Sans eux, la recherche par nom reste possible.",
+            helpTitle: "Où se trouve la recherche ?",
+            helpBody: "La recherche apparaît lorsque la bibliothèque consultée contient plus de 10 dégradés. Essayez d’abord le nom d’une création. Les termes descriptifs ne fonctionnent que si des descriptions ou des mots-clés ont été générés pour celle-ci.",
+            siriHelpTitle: "Ouvrir une création avec Siri",
+            siriHelpBody: "Utilisez le nom enregistré dans MeshCraft pour demander à Siri d’ouvrir un dégradé. Cette fonction nécessite iOS 27 et la nouvelle expérience Siri. Sur iOS 26, Raccourcis permet de récupérer un dégradé choisi, le plus récent ou un dégradé au hasard."
+        },
         examples: {
             eyebrow: "Exemples",
             title: "Pensé pour l’écran que vous emportez partout.",
         },
         technology: {
             eyebrow: "Natif sur les plateformes Apple",
-            title: "Technologie iOS moderne, sans service web.",
-            body: "MeshCraft est une app Apple native avec des données créatives locales et une synchronisation iCloud liée au compte de l’utilisateur.",
+            title: "Pensé pour vos appareils Apple.",
+            body: "Créez sur votre appareil, synchronisez votre bibliothèque avec votre compte iCloud et retrouvez vos dégradés avec Spotlight, Siri et Raccourcis.",
             liquidGlass: "Style d’interface moderne iOS 26 pour les contrôles et les surfaces d’édition.",
             swiftData: "Persistance locale des modèles pour les meshes enregistrés et l’état de l’éditeur.",
             cloudKit: "Synchronisation privée entre les appareils Apple de l’utilisateur.",
             metal: "Superpositions, filtres et exports rendus avec le GPU.",
             meshGradient: "Rendu natif de dégradés optimisé pour des champs de couleur fluides.",
-            appleIntelligence: "Génération de palettes pour trouver de nouvelles directions colorées.",
-            appIntents: "Actions Raccourcis pour récupérer des meshes enregistrés ou aléatoires.",
+            appleIntelligence: "Des suggestions de palettes et des mots-clés pour la recherche, lorsqu’un modèle Apple Intelligence est disponible.",
+            appIntents: "Récupérez vos dégradés avec Raccourcis dès iOS 26. Ouvrez une création par son nom avec la nouvelle expérience Siri sur iOS 27.",
             swiftUI: "Écrans adaptatifs iPhone et iPad avec conseils contextuels.",
+            privateCloudCompute: "Sur iOS 27, MeshCraft utilise Private Cloud Compute d’Apple lorsqu’il est disponible pour suggérer des palettes et générer des descriptions et des mots-clés de recherche. En cas d’indisponibilité ou d’échec, l’app utilise le modèle sur l’appareil lorsqu’il est disponible.",
+            spotlight: "Retrouvez vos dégradés par leur nom et leur aperçu, avec des descriptions et des mots-clés lorsqu’ils sont disponibles.",
         },
         support: {
             eyebrow: "Support",
@@ -701,8 +797,8 @@ const translations = {
             sections: "サイトセクション",
             primaryLinks: "主要リンク",
             screenshots: "MeshCraftアプリのスクリーンショット",
-            dashboardFrame: "MeshCraftダッシュボードのスクリーンショットを表示するiPhone 17 Maxフレーム",
-            editorFrame: "MeshCraftエディタのスクリーンショットを表示するiPhone 17 Maxフレーム",
+            dashboardFrame: "MeshCraftダッシュボードのスクリーンショットを表示するiPhone 18 Pro Maxフレーム",
+            editorFrame: "MeshCraftエディタのスクリーンショットを表示するiPhone 18 Pro Maxフレーム",
             examples: "MeshCraftグラデーション例",
             technologies: "MeshCraftで使用しているAppleテクノロジー",
             footerNav: "フッターナビゲーション",
@@ -773,22 +869,46 @@ const translations = {
                 body: "保存済みグラデーションをショートカットから取得し、壁紙ルーティンに組み込めます。",
             },
         },
+        discovery: {
+            shortcutsTitle: "ショートカットで自動化",
+            shortcutsBody: "保存したグラデーションをAppleのショートカットアプリで活用できます。好きな作品、最新の作品、ランダムな作品を選んで、壁紙を切り替える自分だけのオートメーションに。",
+            shortcutsNote: "iOS 26以降で利用できます。",
+            eyebrow: "作品を見つける",
+            title: "使いたいグラデーションが、すぐそこに。",
+            searchTitle: "保存したグラデーションを検索",
+            searchBody: "名前、色、雰囲気、質感からグラデーションを探せます。探す時間を減らして、つくる時間をもっと。",
+            spotlightTitle: "Spotlightからも見つかる",
+            spotlightBody: "デバイスの検索から、保存したグラデーションを探せます。名前とプレビューで確認し、タップするとMeshCraftで開きます。",
+            siriTitle: "Siriに頼んで開く",
+            siriBody: "iOS 27では、保存したグラデーションの名前をSiriに伝えて開けます。MeshCraftで作品を開いて、次のアイデアへ。",
+            siriExample: "「Siri、MeshCraftでAurora Driftを開いて」",
+            siriNote: "iOS 27と新しいSiriの利用環境が必要です。ショートカットは引き続きiOS 26以降で使えます。",
+            aiTitle: "名前を忘れても、見つけやすく",
+            aiBody: "Apple Intelligenceがグラデーションの色、雰囲気、質感をもとに説明や検索タグを生成します。名前を思い出せなくても、ライブラリやSpotlightで作品を見つけやすくなります。",
+            aiNote: "説明やタグの生成には、利用可能なApple Intelligenceモデルが必要です。利用できない場合も、名前で検索できます。",
+            helpTitle: "検索が表示されないときは",
+            helpBody: "表示中のライブラリにグラデーションが11件以上あると、検索が表示されます。まずは保存した名前で検索してみてください。色や雰囲気などの言葉で探すには、その作品の説明やタグが生成されている必要があります。",
+            siriHelpTitle: "Siriで作品を開くには",
+            siriHelpBody: "MeshCraftに保存したグラデーションの名前をSiriに伝えてください。iOS 27と新しいSiriの利用環境が必要です。iOS 26では、ショートカットで指定した作品、最新の作品、ランダムな作品を取得できます。"
+        },
         examples: {
             eyebrow: "例",
             title: "いつも持ち歩く画面のために。",
         },
         technology: {
             eyebrow: "Appleプラットフォームネイティブ",
-            title: "Webサービス不要のモダンなiOSテクノロジー。",
-            body: "MeshCraftは、ローカルファーストのクリエイティブデータとユーザー自身のiCloud同期を備えたネイティブAppleアプリです。",
+            title: "Appleデバイスに、自然になじむ。",
+            body: "デバイスで作品をつくり、自分のiCloudアカウントでライブラリを同期。Spotlight、Siri、ショートカットから保存したグラデーションを見つけられます。",
             liquidGlass: "コントロールと編集画面に向けたモダンなiOS 26インターフェイス表現。",
             swiftData: "保存済みメッシュとエディタ状態のためのローカルモデル永続化。",
             cloudKit: "ユーザーのAppleデバイス間でのプライベートなアカウント同期。",
             metal: "GPUを使ったオーバーレイ、フィルタ、書き出しレンダリング。",
             meshGradient: "流れるような色面に合わせたネイティブグラデーションレンダリング。",
-            appleIntelligence: "新しい色の方向性を見つけるためのパレット生成。",
-            appIntents: "保存済みまたはランダムなメッシュを取得するショートカットアクション。",
+            appleIntelligence: "Apple Intelligenceモデルが利用できる場合、パレットの提案や検索用の説明タグを生成します。",
+            appIntents: "iOS 26以降ではショートカットで保存したグラデーションを取得できます。iOS 27では、新しいSiriで作品の名前を伝えて開けます。",
             swiftUI: "iPhoneとiPadに適応する画面と文脈に応じた発見ヒント。",
+            privateCloudCompute: "iOS 27では、利用可能な場合にAppleのPrivate Cloud Computeを使い、パレットの提案や検索用の説明・タグを生成します。利用できない場合やリクエストに失敗した場合は、デバイス上のモデルが利用可能であれば、そちらに切り替えます。",
+            spotlight: "名前とプレビューで保存したグラデーションを探せます。生成済みの説明やタグも検索に使われます。",
         },
         support: {
             eyebrow: "サポート",
@@ -873,8 +993,8 @@ const translations = {
             sections: "Secções do site",
             primaryLinks: "Ligações principais",
             screenshots: "Capturas da app MeshCraft",
-            dashboardFrame: "Moldura iPhone 17 Max com captura do painel do MeshCraft",
-            editorFrame: "Moldura iPhone 17 Max com captura do editor do MeshCraft",
+            dashboardFrame: "Moldura iPhone 18 Pro Max com captura do painel do MeshCraft",
+            editorFrame: "Moldura iPhone 18 Pro Max com captura do editor do MeshCraft",
             examples: "Exemplos de gradientes MeshCraft",
             technologies: "Tecnologias Apple usadas pelo MeshCraft",
             footerNav: "Navegação do rodapé",
@@ -945,22 +1065,46 @@ const translations = {
                 body: "Obtenha gradientes guardados através de Atalhos e crie rotinas de wallpapers.",
             },
         },
+        discovery: {
+            shortcutsTitle: "Crie os seus atalhos",
+            shortcutsBody: "Use os gradientes guardados na app Atalhos da Apple. Escolha uma criação, a mais recente ou uma aleatória para automatizar os seus papéis de parede.",
+            shortcutsNote: "Disponível a partir do iOS 26.",
+            eyebrow: "Encontre as suas criações",
+            title: "O gradiente certo, no momento certo.",
+            searchTitle: "Pesquise os gradientes guardados",
+            searchBody: "Encontre um gradiente pelo nome, cor, ambiente ou textura. Menos tempo a procurar, mais tempo a criar.",
+            spotlightTitle: "Encontre-os no Spotlight",
+            spotlightBody: "Procure um gradiente guardado na pesquisa do dispositivo. Reconheça-o pelo nome e pela pré-visualização e toque para o abrir no MeshCraft.",
+            siriTitle: "Peça à Siri para o abrir",
+            siriBody: "No iOS 27, peça à Siri para abrir um gradiente guardado dizendo o seu nome. A sua criação abre-se no MeshCraft, pronta para a próxima ideia.",
+            siriExample: "«Siri, abre Aurora Drift no MeshCraft.»",
+            siriNote: "Requer o iOS 27 e a disponibilidade da nova experiência da Siri. A app Atalhos continua disponível a partir do iOS 26.",
+            aiTitle: "Pesquise para além do nome",
+            aiBody: "A Apple Intelligence pode descrever os seus gradientes e adicionar etiquetas com base nas cores, no ambiente e na textura. Estas palavras ajudam a encontrar criações na biblioteca e no Spotlight, mesmo quando não se lembra do nome.",
+            aiNote: "As descrições e etiquetas requerem um modelo Apple Intelligence disponível. Sem elas, pode continuar a pesquisar pelo nome.",
+            helpTitle: "Onde está a pesquisa?",
+            helpBody: "A pesquisa aparece quando a biblioteca que está a consultar tem mais de 10 gradientes. Experimente primeiro um nome guardado. Os termos descritivos só encontram resultados se tiverem sido geradas descrições ou etiquetas para essa criação.",
+            siriHelpTitle: "Abrir uma criação com a Siri",
+            siriHelpBody: "Use o nome guardado no MeshCraft ao pedir à Siri para abrir um gradiente. Esta funcionalidade requer o iOS 27 e a nova experiência da Siri. No iOS 26, use a app Atalhos para obter um gradiente específico, o mais recente ou um aleatório."
+        },
         examples: {
             eyebrow: "Exemplos",
             title: "Feito para o ecrã que leva consigo.",
         },
         technology: {
             eyebrow: "Nativo nas plataformas Apple",
-            title: "Tecnologia iOS moderna, sem serviço web.",
-            body: "MeshCraft é uma app Apple nativa com dados criativos locais e sincronização iCloud para a conta do utilizador.",
+            title: "Feito para os seus dispositivos Apple.",
+            body: "Crie no seu dispositivo, sincronize a biblioteca com a sua conta iCloud e encontre gradientes com o Spotlight, a Siri e a app Atalhos.",
             liquidGlass: "Estilo de interface moderno do iOS 26 para controlos e superfícies de edição.",
             swiftData: "Persistência local de modelos para meshes guardados e estado do editor.",
             cloudKit: "Sincronização privada entre os dispositivos Apple do utilizador.",
             metal: "Sobreposições, filtros e exportação renderizados com GPU.",
             meshGradient: "Renderização nativa de gradientes afinada para campos de cor fluidos.",
-            appleIntelligence: "Geração de paletas para encontrar novas direcções de cor.",
-            appIntents: "Acções de Atalhos para obter meshes guardados e aleatórios.",
+            appleIntelligence: "Sugestões de paletas e etiquetas descritivas para pesquisa, quando um modelo Apple Intelligence está disponível.",
+            appIntents: "Obtenha gradientes guardados com a app Atalhos a partir do iOS 26. Abra uma criação pelo nome com a nova experiência da Siri no iOS 27.",
             swiftUI: "Ecrãs adaptativos para iPhone e iPad com dicas contextuais.",
+            privateCloudCompute: "No iOS 27, o MeshCraft usa o Private Cloud Compute da Apple, quando disponível, para sugerir paletas e gerar descrições e etiquetas de pesquisa. Se não estiver disponível ou um pedido falhar, a app recorre ao modelo no dispositivo, quando disponível.",
+            spotlight: "Encontre gradientes pelo nome e pela pré-visualização, com descrições e etiquetas quando disponíveis.",
         },
         support: {
             eyebrow: "Suporte",
@@ -1163,3 +1307,76 @@ function configureLanguageSwitcher() {
 
 applyLocale(selectedLocale());
 configureLanguageSwitcher();
+
+// One quiet entrance per section; honor motion preferences, including live changes.
+function configureReveals() {
+    const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (preference.matches || !("IntersectionObserver" in window)) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove("is-pending");
+                observer.unobserve(entry.target);
+            }
+        }
+    }, { threshold: 0.08 });
+
+    for (const element of document.querySelectorAll(".section-heading, .mesh-carousel-heading")) {
+        // Keep the initial viewport and direct anchor destinations immediately readable.
+        if (element.getBoundingClientRect().top < window.innerHeight) continue;
+        element.classList.add("reveal", "is-pending");
+        observer.observe(element);
+    }
+
+    preference.addEventListener("change", () => {
+        if (!preference.matches) return;
+        observer.disconnect();
+        document.querySelectorAll(".is-pending").forEach((element) => {
+            element.classList.remove("is-pending");
+        });
+    });
+}
+configureReveals();
+
+
+// The two phones drift upward and rotate gently while their hero scrolls away.
+function configurePhoneScrollMotion() {
+    const hero = document.querySelector(".hero");
+    const showcase = hero?.querySelector(".showcase");
+    if (!hero || !showcase) return;
+
+    const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const properties = ["--phone-back-rise", "--phone-front-rise", "--phone-back-turn", "--phone-front-turn"];
+    let frame = null;
+
+    function update() {
+        frame = null;
+        if (preference.matches) return;
+
+        const distance = Math.max(1, hero.offsetHeight - 100);
+        const progress = Math.min(1, Math.max(0, window.scrollY / distance));
+        showcase.style.setProperty("--phone-back-rise", `${(progress * 22).toFixed(1)}px`);
+        showcase.style.setProperty("--phone-front-rise", `${(progress * 32).toFixed(1)}px`);
+        showcase.style.setProperty("--phone-back-turn", `${(progress * 3).toFixed(2)}deg`);
+        showcase.style.setProperty("--phone-front-turn", `${(progress * 3).toFixed(2)}deg`);
+    }
+
+    function scheduleUpdate() {
+        if (!preference.matches && frame === null) frame = window.requestAnimationFrame(update);
+    }
+
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate);
+    preference.addEventListener("change", () => {
+        if (preference.matches) {
+            if (frame !== null) window.cancelAnimationFrame(frame);
+            frame = null;
+            for (const property of properties) showcase.style.removeProperty(property);
+        } else {
+            scheduleUpdate();
+        }
+    });
+    scheduleUpdate();
+}
+configurePhoneScrollMotion();

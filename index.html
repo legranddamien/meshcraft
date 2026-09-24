@@ -14,14 +14,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
             rel="stylesheet"
         >
         <link
             href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
             rel="stylesheet"
         >
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css?v=dynamic-island">
         <script src="site.js" defer></script>
     </head>
     <body>
@@ -69,21 +69,24 @@
                             <i class="ri-apple-fill" aria-hidden="true"></i>
                             <span data-i18n="hero.appStore">Download on the App Store</span>
                         </a>
-                        <a class="button button-secondary" href="#support" data-i18n="nav.support">Support</a>
-                        <a class="button button-secondary" href="#privacy" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+                        <div class="hero-secondary-links">
+                            <a class="button button-secondary" href="#support" data-i18n="nav.support">Support</a>
+                            <a class="button button-secondary" href="#privacy" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="showcase" aria-label="MeshCraft app screenshots" data-i18n-aria-label="aria.screenshots">
-                    <article class="phone-card phone-card-back" aria-label="iPhone 17 Max frame showing MeshCraft dashboard screenshot" data-i18n-aria-label="aria.dashboardFrame">
+                    <div class="palette-strips" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+                    <article class="phone-card phone-card-back" aria-label="iPhone 18 Pro Max frame showing MeshCraft dashboard screenshot" data-i18n-aria-label="aria.dashboardFrame">
                         <div class="phone-frame">
                             <span class="phone-button phone-button-left" aria-hidden="true"></span>
                             <span class="phone-button phone-button-right" aria-hidden="true"></span>
                             <div class="phone-screen">
                                 <img
-                                    src="assets/screenshots/iphone_dashboard.jpg"
-                                    width="720"
-                                    height="1564"
+                                    src="assets/screenshots/iphone_dashboard.webp"
+                                    width="640"
+                                    height="1391"
                                     alt="MeshCraft dashboard with saved gradients."
                                     data-i18n-alt="alt.dashboard"
                                     loading="eager"
@@ -92,15 +95,15 @@
                         </div>
                     </article>
 
-                    <article class="phone-card phone-card-front" aria-label="iPhone 17 Max frame showing MeshCraft editor screenshot" data-i18n-aria-label="aria.editorFrame">
+                    <article class="phone-card phone-card-front" aria-label="iPhone 18 Pro Max frame showing MeshCraft editor screenshot" data-i18n-aria-label="aria.editorFrame">
                         <div class="phone-frame">
                             <span class="phone-button phone-button-left" aria-hidden="true"></span>
                             <span class="phone-button phone-button-right" aria-hidden="true"></span>
                             <div class="phone-screen">
                                 <img
-                                    src="assets/screenshots/iphone_editor.jpg"
-                                    width="720"
-                                    height="1564"
+                                    src="assets/screenshots/iphone_editor.webp"
+                                    width="640"
+                                    height="1391"
                                     alt="MeshCraft editor with draggable gradient points."
                                     data-i18n-alt="alt.editor"
                                     loading="eager"
@@ -109,6 +112,46 @@
                         </div>
                     </article>
                 </div>
+            </section>
+
+            <section id="discovery" class="section-shell content-section discovery-section" aria-labelledby="discovery-title">
+                <div class="section-heading">
+                    <p class="eyebrow" data-i18n="discovery.eyebrow">Find your creations</p>
+                    <h2 id="discovery-title" data-i18n="discovery.title">The right gradient. Right when you need it.</h2>
+                </div>
+                <div class="discovery-grid">
+                    <article class="discovery-card">
+                        <i class="ri-search-2-line" aria-hidden="true"></i>
+                        <h3><span data-i18n="discovery.searchTitle">Search your saved gradients</span></h3>
+                        <p><span data-i18n="discovery.searchBody">Find a gradient by name, color, mood, or texture. Spend less time browsing and more time creating.</span></p>
+                    </article>
+                    <article class="discovery-card">
+                        <i class="ri-focus-3-line" aria-hidden="true"></i>
+                        <h3><span data-i18n="discovery.spotlightTitle">Find it in Spotlight</span></h3>
+                        <p><span data-i18n="discovery.spotlightBody">Look up a saved gradient from your device’s search. Recognize it by its name and preview, then tap to open it in MeshCraft.</span></p>
+                    </article>
+                    <article class="discovery-card">
+                        <i class="ri-mic-line" aria-hidden="true"></i>
+                        <h3><span data-i18n="discovery.siriTitle">Ask Siri to open it</span></h3>
+                        <p><span data-i18n="discovery.siriBody">On iOS 27, ask Siri to open a saved gradient by name. Your creation opens in MeshCraft, ready for your next idea.</span></p>
+                        <blockquote><span data-i18n="discovery.siriExample">“Siri, open Aurora Drift in MeshCraft.”</span></blockquote>
+                        <p class="discovery-note"><span data-i18n="discovery.siriNote">Requires iOS 27 and availability of the new Siri experience. Shortcuts remains available on iOS 26 and later.</span></p>
+                    </article>
+                    <article class="discovery-card">
+                        <i class="ri-flow-chart" aria-hidden="true"></i>
+                        <h3><span data-i18n="discovery.shortcutsTitle">Make it a Shortcut</span></h3>
+                        <p><span data-i18n="discovery.shortcutsBody">Bring your saved gradients into Apple’s Shortcuts app. Use a favorite, your latest creation, or a random gradient to build your own wallpaper routine.</span></p>
+                        <p class="discovery-note"><span data-i18n="discovery.shortcutsNote">Available on iOS 26 and later.</span></p>
+                    </article>
+                </div>
+                <aside class="discovery-intelligence" aria-labelledby="discovery-ai-title">
+                    <i class="ri-sparkling-2-line" aria-hidden="true"></i>
+                    <div>
+                        <h3 id="discovery-ai-title"><span data-i18n="discovery.aiTitle">Search beyond the name</span></h3>
+                        <p><span data-i18n="discovery.aiBody">Apple Intelligence can describe your gradients and add search tags based on their colors, mood, and texture. Those words help you find creations in your library and Spotlight, even when you don’t remember the name.</span></p>
+                        <p class="discovery-note"><span data-i18n="discovery.aiNote">AI descriptions and tags require an available Apple Intelligence model. Without them, you can still search by name.</span></p>
+                    </div>
+                </aside>
             </section>
 
             <section id="features" class="section-shell content-section" aria-labelledby="features-title">
@@ -169,7 +212,7 @@
                         <p class="eyebrow" data-i18n="examples.eyebrow">Examples</p>
                         <h3 data-i18n="examples.title">Made for the screen you carry.</h3>
                     </div>
-                    <div class="mesh-carousel-track">
+                    <div class="mesh-carousel-track" tabindex="0" role="region" aria-label="MeshCraft gradient examples" data-i18n-aria-label="aria.examples">
                         <figure class="mesh-slide">
                             <img src="assets/meshes/mesh_1.jpg" width="640" height="1391" alt="MeshCraft example gradient 1" data-i18n-alt="alt.mesh1" loading="lazy">
                         </figure>
@@ -204,11 +247,8 @@
             <section id="technology" class="section-shell content-section split-section" aria-labelledby="technology-title">
                 <div class="section-heading sticky-heading">
                     <p class="eyebrow" data-i18n="technology.eyebrow">Apple platform native</p>
-                    <h2 id="technology-title" data-i18n="technology.title">Modern iOS technology, no web service required.</h2>
-                    <p data-i18n="technology.body">
-                        MeshCraft is built as a native Apple app with local-first creative data and iCloud sync for the
-                        user's own account.
-                    </p>
+                    <h2 id="technology-title" data-i18n="technology.title">Made for your Apple devices.</h2>
+                    <p data-i18n="technology.body">Create on your device, keep your library in sync with your own iCloud account, and find saved gradients with Spotlight, Siri, and Shortcuts.</p>
                 </div>
                 <div class="technology-list" aria-label="Apple technologies used by MeshCraft" data-i18n-aria-label="aria.technologies">
                     <article>
@@ -233,15 +273,23 @@
                     </article>
                     <article>
                         <span><i class="ri-sparkling-line" aria-hidden="true"></i> Apple Intelligence</span>
-                        <p data-i18n="technology.appleIntelligence">Palette generation to help users find fresh color directions.</p>
+                        <p data-i18n="technology.appleIntelligence">Palette suggestions and descriptive search tags, when an Apple Intelligence model is available.</p>
                     </article>
                     <article>
                         <span><i class="ri-command-line" aria-hidden="true"></i> App Intents</span>
-                        <p data-i18n="technology.appIntents">Shortcuts actions for retrieving saved and random meshes.</p>
+                        <p data-i18n="technology.appIntents">Retrieve saved gradients with Shortcuts on iOS 26 and later. Open a named creation with the new Siri experience on iOS 27.</p>
                     </article>
                     <article>
                         <span><i class="ri-layout-5-line" aria-hidden="true"></i> SwiftUI and TipKit</span>
                         <p data-i18n="technology.swiftUI">Adaptive iPhone and iPad screens with contextual discovery tips.</p>
+                    </article>
+                    <article>
+                        <span><i class="ri-shield-check-line" aria-hidden="true"></i> Private Cloud Compute</span>
+                        <p data-i18n="technology.privateCloudCompute">On iOS 27, MeshCraft uses Apple’s Private Cloud Compute when available to suggest palettes and generate search descriptions and tags. If it’s unavailable or a request fails, the app falls back to the on-device model when available.</p>
+                    </article>
+                    <article>
+                        <span><i class="ri-focus-3-line" aria-hidden="true"></i> Spotlight</span>
+                        <p data-i18n="technology.spotlight">Search saved gradients by name and preview, with descriptions and tags when available.</p>
                     </article>
                 </div>
             </section>
@@ -266,6 +314,14 @@
                             MeshCraft supports iCloud. To sync saved creations across devices, sign in to an iCloud
                             account on each device and keep iCloud enabled in Settings.
                         </p>
+                    </article>
+                    <article class="support-panel">
+                        <h3><span data-i18n="discovery.helpTitle">Where is library search?</span></h3>
+                        <p><span data-i18n="discovery.helpBody">Search appears when the library you’re viewing contains more than 10 gradients. Try a saved name first. Descriptive terms only match when descriptions or tags have been generated for that creation.</span></p>
+                    </article>
+                    <article class="support-panel">
+                        <h3><span data-i18n="discovery.siriHelpTitle">Opening with Siri</span></h3>
+                        <p><span data-i18n="discovery.siriHelpBody">Use the name you saved in MeshCraft when asking Siri to open a gradient. This feature requires iOS 27 and the new Siri experience. On iOS 26, use Shortcuts to retrieve a selected, latest, or random saved gradient.</span></p>
                     </article>
                     <article class="support-panel">
                         <h3 data-i18n="support.creating.title">Creating a gradient</h3>
